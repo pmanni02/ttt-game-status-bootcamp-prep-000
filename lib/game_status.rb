@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  board.each do |comb|
+  WIN_COMBINATIONS.each do |comb|
     puts comb
   end
 end
