@@ -16,9 +16,9 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  WIN_COMBINATIONS.select do |comb|
+  WIN_COMBINATIONS.detect do |comb|
     (comb[0]===comb[1])&&(comb[0]===comb[2])&&(comb[0] != " ")
-    return true
+    
   end
   return false
 end
