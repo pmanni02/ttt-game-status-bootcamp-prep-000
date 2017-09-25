@@ -16,12 +16,17 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
+
   WIN_COMBINATIONS.each do |comb|
+
     puts comb.display
-    comb.detect do |test|
-      puts "test"
+    comb.detect do |ele|
+
+
+
     end
   end
+
 end
 
 def full?(board)
