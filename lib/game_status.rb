@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  WIN_COMBINATIONS.each {|comb|}
+  WIN_COMBINATIONS.each do |comb|
      (comb[0]===comb[1]&&comb[1]===comb[2]&&comb[0]===comb[2]) && (comb[0]==="X" || comb[0]==="O")
       #winning_comb = comb
   end
