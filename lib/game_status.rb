@@ -17,14 +17,8 @@ WIN_COMBINATIONS = [
 
 def won?(board)
 
-  WIN_COMBINATIONS.each do |comb|
-
-    puts comb.display
-    comb.detect do |ele|
-
-
-
-    end
+  WIN_COMBINATIONS.select do |comb|
+    (comb[0]===comb[1])&&(comb[0] != " ")
   end
 
 end
