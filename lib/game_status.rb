@@ -14,3 +14,16 @@ WIN_COMBINATIONS = [
   [0,4,8],
   [2,4,6]
 ]
+
+def won(board)
+  winning_comb = WIN_COMBINATIONS.select do |comb|
+     (comb[0]===comb[1]&&comb[1]===comb[2]&&comb[0]===comb[2])
+      #winning_comb = comb
+  end
+
+  if(winning_comb)
+    return winning_comb
+  else
+    return false
+  end
+end
