@@ -23,11 +23,12 @@ def won?(board)
 end
 
 def full?(board)
-  board.each do |pos|
-    if position_taken?(board,pos)
-      return false
-    else
-      return true
+  i = 0
+  full = false
+  while i < 10
+    if board[i] === " "
+      full = false
     end
+    i += 1 
   end
 end
