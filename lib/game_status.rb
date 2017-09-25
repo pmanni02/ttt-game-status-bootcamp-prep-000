@@ -28,10 +28,3 @@ def won?(board)
   end
 end
 
-def full?(board)
-  board.each do|row|
-    row.detect do|ele|
-      ele === " "
-    end
-  end
-end
