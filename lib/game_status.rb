@@ -37,3 +37,12 @@ def full?(board)
   end
   return full
 end
+
+def draw(board)
+  if full?(board)
+
+  else
+    #board is not full
+    return false
+  end
+end
