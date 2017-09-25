@@ -24,7 +24,7 @@ end
 
 def full?(board)
   board.each do |pos|
-    if position_taken(pos)
+    if position_taken?(pos)
       return false
     else
       return true
