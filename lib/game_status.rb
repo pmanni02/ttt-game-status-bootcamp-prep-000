@@ -17,12 +17,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |comb|
-     if((comb[0]===comb[1]&&comb[1]===comb[2]&&comb[0]===comb[2]) && (comb[0]==="X" || comb[0]==="O"))
-       win_combination = comb
-       return comb
-     else
-       return false
-     end
+     
   end
 end
 
