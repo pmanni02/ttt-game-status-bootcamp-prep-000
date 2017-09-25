@@ -15,7 +15,7 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 
-def won(board)
+def won?(board)
   winning_comb = WIN_COMBINATIONS.select do |comb|
      (comb[0]===comb[1]&&comb[1]===comb[2]&&comb[0]===comb[2])
       #winning_comb = comb
