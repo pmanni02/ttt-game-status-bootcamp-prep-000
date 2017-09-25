@@ -19,6 +19,7 @@ def won?(board)
 
   WIN_COMBINATIONS.select do |comb|
     (comb[0]===comb[1])&&(comb[0] != " ")
+    return true
   end
 
 end
