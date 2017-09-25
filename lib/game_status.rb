@@ -24,11 +24,12 @@ end
 
 def full?(board)
   i = 0
-  full = false
+  full = true
   while i < 10
     if board[i] === " "
       full = false
     end
-    i += 1 
+    i += 1
   end
+  return full
 end
