@@ -18,7 +18,6 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.detect {|comb|
     (comb[0]===comb[1])&&(comb[0]===comb[2])&&(comb[0] != " ")}
-  end
 end
 
 def full?(board)
