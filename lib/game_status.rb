@@ -57,7 +57,7 @@ end
 
 def winner(board)
   if won?(board)
-    puts won?(board)
+    puts won?(board)[0]
   else
     return false
   end
