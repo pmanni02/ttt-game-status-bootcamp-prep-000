@@ -18,6 +18,9 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.each do |comb|
     puts comb.display
+    comb.detect do |test|
+      puts "test"
+    end
   end
 end
 
