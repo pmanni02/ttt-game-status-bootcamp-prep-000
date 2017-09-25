@@ -21,7 +21,7 @@ def won?(board)
       #winning_comb = comb
   end
 
-  if(winning_comb)
+  if(winning_comb != [])
     return winning_comb
   else
     return false
