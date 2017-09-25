@@ -33,5 +33,5 @@ def full?(board)
     row.detect do |ele|
       ele === " "
     end
-  end  
+  end
 end
