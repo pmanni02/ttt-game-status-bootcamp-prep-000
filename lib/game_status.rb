@@ -17,11 +17,11 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   winning_comb = WIN_COMBINATIONS.select do |comb|
-     (comb[0]===comb[1]&&comb[1]===comb[2]&&comb[0]===comb[2])
+     (comb[0]===comb[1]&&comb[1]===comb[2]&&comb[0]===comb[2]) && (comb[0]==="X" || comb[0]==="O")
       #winning_comb = comb
   end
 
-  if(winning_comb != [])
+  if(winning_comb)
     return winning_comb
   else
     return false
